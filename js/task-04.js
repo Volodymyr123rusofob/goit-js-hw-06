@@ -6,21 +6,20 @@ const buttonSubtracts = document.querySelector(
     'button[data-action="decrement"]'
 );
 
-const result = document.querySelector("#value");
+const counterDisplay = document.querySelector("#value");
 
-let counterValue = 0;
+let currentCounterValue = 0;
 
 const adds = () => {
-    counterValue += 1;
-    result.textContent = counterValue;
+    currentCounterValue += 1;
+    counterDisplay.textContent = currentCounterValue;
 };
 
 const subtracts = () => {
-    counterValue -= 1;
-    result.textContent = counterValue;
+    currentCounterValue -= 1;
+    counterDisplay.textContent = currentCounterValue;
 };
 
 buttonAdds.addEventListener("click", adds);
 
 buttonSubtracts.addEventListener("click", subtracts);
-console.log(counterValue);

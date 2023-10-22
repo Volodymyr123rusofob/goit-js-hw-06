@@ -25,6 +25,17 @@ button {
 }
 .gallery {
     display: flex;
-    list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery li {
+    margin: 10px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
 }
